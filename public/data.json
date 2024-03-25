@@ -1,0 +1,97 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "Single-Photon Imaging",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/fMVwgp0/book6.jpg",
+        "review": "Single-Photon Imaging is a comprehensive guide that delves into the cutting-edge field of photonics, exploring the principles and applications of detecting and manipulating individual photons. With clear explanations and detailed examples, it serves as an invaluable resource for researchers and engineers seeking to push the boundaries of optical imaging technology",
+        "totalPages": 336,
+        "rating": 4.5,
+        "category": "Imaging",
+        "tags": [
+            "Classic",
+            "Social Justice"
+        ],
+        "publisher": "Harper Perennial"
+    },
+    {
+        "bookId": 2,
+        "bookName": "Bible",
+        "author": "H Holy Smith",
+        "image": "https://i.ibb.co/d79RRvt/book7.jpg",
+        "review": "The Bible is a timeless and profound collection of sacred texts that have shaped cultures, religions, and civilizations for millennia, offering spiritual guidance and moral teachings to countless believers. Its enduring influence and profound wisdom continue to inspire and comfort people of diverse backgrounds around the world.",
+        "totalPages": 328,
+        "rating": 4.8,
+        "category": "Religion",
+        "tags": [
+            "Religion",
+            "Bible",
+            "Holy"
+        ],
+        "publisher": "H R Holly"
+    },
+    {
+        "bookId": 3,
+        "bookName": "How to be single",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/DMbyQgy/book5.png",
+        "review": "How to Be Single offers a witty and insightful exploration of navigating life and relationships with independence and confidence. With practical advice and humorous anecdotes, it's the perfect companion for anyone embracing the single journey with flair and self-assurance.",
+        "totalPages": 180,
+        "rating": 4.3,
+        "category": "Romantic",
+        "tags": [
+            "Happy",
+            "Single",
+            "Enjoy"
+        ],
+        "publisher": "Scribner"
+    },
+    {
+        "bookId": 4,
+        "bookName": "The path to Politic",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/9YWtMnB/attachment-119353530.jpg",
+        "review": "The Path to Politics is a compelling roadmap that navigates through the intricate landscape of political theory and practice, offering insights into the mechanisms that shape governance and policymaking. With its lucid analysis and thought-provoking examples, it equips readers with the knowledge needed to engage meaningfully in the political arena",
+        "totalPages": 432,
+        "rating": 4.7,
+        "category": "Fiction",
+        "tags": [
+            "Politic",
+            "power",
+            "Leader"
+        ],
+        "publisher": "Penguin Classics"
+    },
+    {
+        "bookId": 5,
+        "bookName": "Social Studies",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/xq74vZp/images-1.jpg",
+        "review": "Social Studies offers a comprehensive exploration of human societies, cultures, and interactions, providing valuable insights into our shared history and contemporary global dynamics. With its engaging narrative and diverse perspectives, it serves as an indispensable resource for understanding the complexities of our interconnected world.",
+        "totalPages": 224,
+        "rating": 4.2,
+        "category": "Social Since",
+        "tags": [
+            "Social",
+            "Social Literature",
+            "logical"
+        ],
+        "publisher": "Back Bay Books"
+    },
+    {
+        "bookId": 6,
+        "bookName": "Think Grow Rich",
+        "author": "Napoleon",
+        "image": "https://i.ibb.co/GRKfc3N/download-1.jpg",
+        "review": "Think and Grow Rich by Napoleon Hill is a timeless masterpiece that distills the secrets of success into actionable principles. With its clear insights and motivational prose, it's an essential guide for anyone aspiring to achieve their goals and unlock their full potential.",
+        "totalPages": 320,
+        "rating": 4.9,
+        "category": "Rich Life",
+        "tags": [
+            "Magic",
+            "Rice",
+            "Money"
+        ],
+        "publisher": "Scholastic Inc."
+    }
+]

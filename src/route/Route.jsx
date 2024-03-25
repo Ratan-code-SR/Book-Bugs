@@ -11,11 +11,13 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home />
+                element: <Home />,
+                loader: ()=> fetch('data.json')
             },
             {
                 path: '/bookLists',
-                element: <Book_list />
+                element: <Book_list />,
+               
             },
             {
                 path: '/pages',

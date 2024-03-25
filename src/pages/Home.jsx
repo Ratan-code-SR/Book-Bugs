@@ -1,9 +1,14 @@
 
+import Cards from "../components/Book_Card/Cards";
+import Hero from "../components/Hero/Hero";
+
 
 const Home = () => {
+ 
     return (
         <div>
-            <h1>home page</h1>
+            <Hero />
+            <Cards/>
         </div>
     );
 };

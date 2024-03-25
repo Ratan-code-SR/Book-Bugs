@@ -1,6 +1,5 @@
+import { Outlet } from "react-router-dom";
 import Nav from "../components/Header/Nav";
-import Home from "../pages/Home";
-
 
 
 const Layout = () => {
@@ -9,8 +8,9 @@ const Layout = () => {
             <header className="container mx-auto px-4">
                 <Nav />
             </header>
-            <main>
-                <Home />
+            <main className="container mx-auto px-4">
+                {/* <Home /> */}
+                <Outlet/>
             </main>
         </>
     );
