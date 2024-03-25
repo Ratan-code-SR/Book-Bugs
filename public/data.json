@@ -1,6 +1,6 @@
 [
     {
-        "bookId": 1,
+        "id": 1,
         "bookName": "Single-Photon Imaging",
         "author": "Harper Lee",
         "image": "https://i.ibb.co/fMVwgp0/book6.jpg",
@@ -12,10 +12,11 @@
             "Classic",
             "Social Justice"
         ],
-        "publisher": "Harper Perennial"
+        "publisher": "Harper Perennial",
+        "yearOfPublishing": 1990
     },
     {
-        "bookId": 2,
+        "id": 2,
         "bookName": "Bible",
         "author": "H Holy Smith",
         "image": "https://i.ibb.co/d79RRvt/book7.jpg",
@@ -28,10 +29,11 @@
             "Bible",
             "Holy"
         ],
-        "publisher": "H R Holly"
+        "publisher": "H R Holly",
+        "yearOfPublishing": 2011
     },
     {
-        "bookId": 3,
+        "id": 3,
         "bookName": "How to be single",
         "author": "F. Scott Fitzgerald",
         "image": "https://i.ibb.co/DMbyQgy/book5.png",
@@ -44,10 +46,11 @@
             "Single",
             "Enjoy"
         ],
-        "publisher": "Scribner"
+        "publisher": "Scribner",
+        "yearOfPublishing": 1997
     },
     {
-        "bookId": 4,
+        "id": 4,
         "bookName": "The path to Politic",
         "author": "Jane Austen",
         "image": "https://i.ibb.co/9YWtMnB/attachment-119353530.jpg",
@@ -60,10 +63,11 @@
             "power",
             "Leader"
         ],
-        "publisher": "Penguin Classics"
+        "publisher": "Penguin Classics",
+        "yearOfPublishing": 2010
     },
     {
-        "bookId": 5,
+        "id": 5,
         "bookName": "Social Studies",
         "author": "J.D. Salinger",
         "image": "https://i.ibb.co/xq74vZp/images-1.jpg",
@@ -76,10 +80,11 @@
             "Social Literature",
             "logical"
         ],
-        "publisher": "Back Bay Books"
+        "publisher": "Back Bay Books",
+        "yearOfPublishing": 1980
     },
     {
-        "bookId": 6,
+        "id": 6,
         "bookName": "Think Grow Rich",
         "author": "Napoleon",
         "image": "https://i.ibb.co/GRKfc3N/download-1.jpg",
@@ -92,6 +97,7 @@
             "Rice",
             "Money"
         ],
-        "publisher": "Scholastic Inc."
+        "publisher": "Scholastic Inc.",
+        "yearOfPublishing": 1190
     }
 ]
