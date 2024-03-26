@@ -8,25 +8,26 @@ const Book_list = () => {
     return (
         <div>
             <h1 className="text-3xl font-bold text-center p-3 bg-[#f3f3f3] rounded-md">Books</h1>
-            <select class=" md:my-10 mx-auto flex justify-center bg-[#23be0a] outline-none text-white  p-3 rounded-md">
+            <select class=" md:my-10 my-5 mx-auto flex justify-center bg-[#23be0a] outline-none text-white  p-3 rounded-md">
                 <option >Sort Buys <FaAngleDown /></option>
                 <option>Pages</option>
                 <option>Rating</option>
                 <option>Published Year</option>
             </select>
             <div>
-                <div className="flex items-center my-5 mt-10">
+                <div className="flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
                     <Link to='bookLists'>
-                        <div onClick={() => setCount(0)} className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${count === 0 ? 'border border-b-0 w-full' : 'border-b '} rounded-t-lg dark:border-gray-600 border-black w-full`}>
+                        <div onClick={() => setCount(0)} rel="noopener noreferrer" href="#" className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2  ${count === 0 ? 'border border-b-0 border-l-0 w-full' : 'border-b '} rounded-t-lg border-[#d1d1d1]dark:text-gray-600`}>
                             <span>Read Books</span>
                         </div>
                     </Link>
-
                     <Link to='wishList'>
-                        <div onClick={() => setCount(1)} rel="noopener noreferrer" href="#" className={`flex items-center flex-shrink-0 md:px-5 md:py-3 ${count === 1 ? 'border border-b-0 ' : ' border-b  '}  rounded-t-lg border-black dark:text-gray-900 w-full  `}>
+                        <div onClick={() => setCount(1)} rel="noopener noreferrer" href="#" className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${count === 1 ? 'border border-b-0' : ' border-b  '}  rounded-t-lg border-[#d1d1d1] dark:text-gray-900`}>
+
                             <span>Wishlist Books</span>
                         </div>
                     </Link>
+
                 </div>
                 <Outlet />
             </div>
