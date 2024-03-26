@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, useRouteError } from "react-router-dom";
 import Layout from "../layout/Layout";
 import Home from "../pages/Home";
 import Book_list from "../pages/Book_list"
@@ -6,13 +6,19 @@ import Page_to_read from "../pages/Read-page/Page_to_read"
 import Book_details from "../pages/Book_details";
 import Read_books from "../pages/Read_books";
 import Wish_List from "../pages/Wish_List";
+import Error from "../pages/Error";
 
 
 
 export const router = createBrowserRouter([
     {
+        path: '*',
+        element: <Error />,
+    },
+    {
         path: "/",
         element: <Layout />,
+
         children: [
             {
                 path: '/',
