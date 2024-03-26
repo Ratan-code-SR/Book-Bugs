@@ -7,6 +7,8 @@ import Book_details from "../pages/Book_details";
 import Read_books from "../pages/Read_books";
 import Wish_List from "../pages/Wish_List";
 import Error from "../pages/Error";
+import Contact from "../components/Contact/Faq"
+import Blogs from "../components/Blogs/Blogs";
 
 
 
@@ -47,7 +49,17 @@ export const router = createBrowserRouter([
                 path: '/details/:id',
                 element: <Book_details />,
                 loader: () => fetch('../data.json'),
-            }
+            },
+            {
+                path: '/faqs',
+                element: <Contact/>,
+                loader: () => fetch('../data.json'),
+            },
+            {
+                path: '/blogs',
+                element: <Blogs/>,
+                loader: () => fetch('../data.json'),
+            },
         ]
     },
 ]);
