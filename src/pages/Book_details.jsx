@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
-import { saveReadBooksList } from '../utils';
+import { addWishList, saveReadBooksList } from '../utils';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -11,7 +11,11 @@ const Book_details = () => {
     const book = booksData.find(data => data.id === numId);
     const { image, bookName, author, category, review, tags, totalPages, publisher, yearOfPublishing, rating } = book;
     const addReadList = (book) => {
-      saveReadBooksList(book)
+        saveReadBooksList(book)
+    }
+
+    const handleWishList = (book) => {
+        addWishList(book)
     }
 
     return (
@@ -46,10 +50,10 @@ const Book_details = () => {
 
                 <div className='flex gap-2'>
                     <button onClick={() => addReadList(book)} className='border border-gray-400 px-4 rounded-lg font-bold'>Read</button>
-                    <button className='btn btn-success text-white bg-[#50b1c9]'>Wishlist</button>
+                    <button onClick={() => handleWishList(book)} className='btn btn-success text-white bg-[#50b1c9]'>Wishlist</button>
                 </div>
             </div>
-             <ToastContainer />
+            <ToastContainer />
         </div>
     );
 };

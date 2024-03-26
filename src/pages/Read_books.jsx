@@ -1,5 +1,5 @@
 
-import Page_card from "./Read_Page/Page_card"
+import Page_card from "./List_page/Page_card"
 import { getBooks } from "../utils";
 import { useEffect, useState } from "react";
 
