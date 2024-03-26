@@ -1,9 +1,13 @@
-import React from 'react';
+
+import Page_card from "./Read_Page/Page_card"
+import { getBooks } from "../utils";
+import { useEffect, useState } from "react";
 
 const Read_books = () => {
+   
     return (
         <div>
-            <h1>read book</h1>
+            {/* {books.map((book,index) => <Page_card key={index} book={book} />)} */}
         </div>
     );
 };

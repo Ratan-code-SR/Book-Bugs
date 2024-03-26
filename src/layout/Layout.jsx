@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import Nav from "../components/Header/Nav";
 
 
+
 const Layout = () => {
     return (
         <>
@@ -9,7 +10,6 @@ const Layout = () => {
                 <Nav />
             </header>
             <main className="container mx-auto px-4">
-                {/* <Home /> */}
                 <Outlet/>
             </main>
         </>

@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const Page_to_read = () => {
+
     return (
         <div>
             <h1>page to read</h1>
