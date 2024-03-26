@@ -10,7 +10,6 @@ const Book_details = () => {
     const numId = parseInt(id)
     const book = booksData.find(data => data.id === numId);
     const { image, bookName, author, category, review, tags, totalPages, publisher, yearOfPublishing, rating } = book;
-// console.log(book.id);
     const addReadList = (book) => {
       saveReadBooksList(book)
     }
