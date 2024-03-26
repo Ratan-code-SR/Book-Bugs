@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-
+import { FaAngleDown } from "react-icons/fa";
 
 const Book_list = () => {
 
@@ -8,10 +8,14 @@ const Book_list = () => {
     return (
         <div>
             <h1 className="text-3xl font-bold text-center p-3 bg-[#f3f3f3] rounded-md">Books</h1>
-            <button className="btn btn-secondary flex justify-center">Sort</button>
-
+            <select class=" md:my-10 mx-auto flex justify-center bg-[#23be0a] outline-none text-white  p-3 rounded-md">
+                <option >Sort Buys <FaAngleDown /></option>
+                <option>Pages</option>
+                <option>Rating</option>
+                <option>Published Year</option>
+            </select>
             <div>
-                <div className="flex items-center my-5">
+                <div className="flex items-center my-5 mt-10">
                     <Link to='bookLists'>
                         <div onClick={() => setCount(0)} className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${count === 0 ? 'border border-b-0 w-full' : 'border-b '} rounded-t-lg dark:border-gray-600 border-black w-full`}>
                             <span>Read Books</span>
