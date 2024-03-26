@@ -1,8 +1,25 @@
 import { useEffect, useState } from "react";
 import { getBooks } from "../../utils";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid } from 'recharts';
 import Empty from "./Empty";
-const Page_to_read = () => {
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
+
+const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
+
+
+const getPath = (x, y, width, height) => {
+    return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
+  ${x + width / 2}, ${y}
+  C${x + width / 2},${y + height / 3} ${x + (2 * width) / 3},${y + height} ${x + width}, ${y + height}
+  Z`;
+};
+
+const TriangleBar = (props) => {
+    const { fill, x, y, width, height } = props;
+
+    return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
+};
+
+export default function App() {
     const getBooksData = getBooks()
     const [books, setBooks] = useState([])
     useEffect(() => {
@@ -11,21 +28,33 @@ const Page_to_read = () => {
 
     const data = books;
     if (data.length <= 0) {
-        return  <Empty/>
+        return <Empty />
     }
     return (
-        <div className="mx-auto flex justify-center my-5">
-            <div className=" bg-[#f8f8f8] p-2 rounded-md">
-                <BarChart width={800} height={300} data={data}>
-                    <XAxis dataKey="bookName" stroke="#8884d8" />
+        <div style={{ width: '100%', height: 300 }}>
+            <ResponsiveContainer>
+                <BarChart
+                    width={500}
+                    height={300}
+                    data={data}
+                    margin={{
+                        top: 20,
+                        right: 30,
+                        left: 20,
+                        bottom: 5,
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="bookName" />
                     <YAxis />
-                    <Tooltip wrapperStyle={{ width: 100, backgroundColor: '#00c29c' }} />
-                    <CartesianGrid stroke="#00c29c" strokeDasharray="5 5" />
-                    <Bar dataKey="totalPages" fill="#fbb929" barSize={30} />
+                    <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+                        {data.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                        ))}
+                    </Bar>
                 </BarChart>
-            </div>
+            </ResponsiveContainer>
         </div>
     );
-};
+}
 
-export default Page_to_read;
