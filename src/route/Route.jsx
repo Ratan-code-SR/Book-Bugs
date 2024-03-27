@@ -9,6 +9,7 @@ import Wish_List from "../pages/Wish_List";
 import Error from "../pages/Error";
 import Contact from "../components/Contact/Faq"
 import Blogs from "../components/Blogs/Blogs";
+import Blog_details from "../components/Blogs/Blog_details";
 
 
 
@@ -52,11 +53,16 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/faqs',
-                element: <Contact/>,
+                element: <Contact />,
             },
             {
                 path: '/blogs',
-                element: <Blogs/>,
+                element: <Blogs />,
+                loader: () => fetch('../blogs.json'),
+            },
+            {
+                path: '/blog/:id',
+                element: <Blog_details /> ,
                 loader: () => fetch('../blogs.json'),
             },
         ]
