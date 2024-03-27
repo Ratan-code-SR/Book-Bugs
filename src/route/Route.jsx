@@ -1,4 +1,4 @@
-import { createBrowserRouter, useRouteError } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Layout from "../layout/Layout";
 import Home from "../pages/Home";
 import Book_list from "../pages/Book_list"
@@ -30,7 +30,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/bookLists',
-                element: <Book_list />,
+                element: <Book_list/>,
                 children: [
                     {
                         index: true,

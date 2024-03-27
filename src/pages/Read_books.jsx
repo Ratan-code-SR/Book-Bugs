@@ -1,18 +1,14 @@
 
 import Page_card from "./List_page/Page_card"
-import { getBooks } from "../utils";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { UserContext } from "./Book_list";
+
 
 const Read_books = () => {
-    const getData = getBooks()
-    const [books, setBooks] = useState([])
-    useEffect(() => {
-        setBooks(getData)
-    }, [])
-    
+    const books = useContext(UserContext)
     return (
         <div>
-            {books.map((book) => <Page_card key={book.id} book={book} />)}
+            {books.map((book, index) => <Page_card key={index} book={book} />)}
         </div>
     );
 };

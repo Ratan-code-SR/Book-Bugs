@@ -15,11 +15,11 @@ export const saveReadBooksList = book => {
     let books = getBooks()
     const isExist = books.find(b => b.id === book.id)
     if (isExist) {
-        return toast.error('Already add to Read List!')
+        return toast.error('Book Already Add To Read List!')
     }
     books.push(book)
     localStorage.setItem('books', JSON.stringify(books))
-    toast.success('Book add to Read  List Successfully!')
+    toast.success('Book Add To Read List Successfully!')
 }
 
 export const getWishList = () => {
@@ -39,13 +39,13 @@ export const addWishList = book => {
     const isExist = books.find(b => b.id === book.id)
     const isExistList = lists.find(b => b.id === book.id)
     if (isExist) {
-        return toast.error("Book add to read List added");
+        return toast.error("Book Already Add To Read List!");
     }
     if (isExistList) {
-        return toast.error("Wish book already added!");
+        return toast.error("Book Already Add To Wish List! !");
     }
     books.push(book)
     localStorage.setItem("wish", JSON.stringify(books))
-    toast.success("Wish list added successfully");
-
+    toast.success("Wish List Add Successfully!");
 }
+

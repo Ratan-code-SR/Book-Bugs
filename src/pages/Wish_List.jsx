@@ -1,14 +1,10 @@
-import { useEffect, useState } from "react";
-import { getWishList } from "../utils";
+import { useContext} from "react";
 import List_card from "./List_page/List_card";
+import { UserContext } from "./Book_list";
 
 
 const Wish_List = () => {
-    const getData = getWishList()
-    const [lists, setLists] = useState([])
-    useEffect(() => {
-        setLists(getData)
-    }, [])
+    const lists = useContext(UserContext)
     return (
         <div>
               {lists.map((list) => <List_card key={list.id} list={list} />)}
