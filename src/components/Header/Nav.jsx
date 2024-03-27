@@ -32,7 +32,7 @@ const Nav = () => {
                     <a className="btn bg-[#42afea] hover:bg-blue-400 text-white px-5" >Sign Up</a>
                 </div>
             </div>
-           
+
         </>
     );
 };

@@ -53,12 +53,11 @@ export const router = createBrowserRouter([
             {
                 path: '/faqs',
                 element: <Contact/>,
-                loader: () => fetch('../data.json'),
             },
             {
                 path: '/blogs',
                 element: <Blogs/>,
-                loader: () => fetch('../data.json'),
+                loader: () => fetch('../blogs.json'),
             },
         ]
     },
