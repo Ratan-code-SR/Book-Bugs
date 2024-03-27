@@ -1,6 +1,7 @@
 # Enchanted Library
 
 ## Live Link: 
+Click here for see my website:  [Book Bugs](https://b9-assignment8-ratan-code-sr.netlify.app/)
 
 Project Resources:
 ## Css FrameWork :
@@ -16,3 +17,4 @@ Project Resources:
 
 ## Fake Data :
 - [Json-data](data.json)
+- [Json-data](blogs.json)

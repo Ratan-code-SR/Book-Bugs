@@ -15,7 +15,7 @@ const Book_list = () => {
             </select>
             <div>
                 <div className="flex items-center px-5 -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800">
-                    <Link to='bookLists'>
+                    <Link to=''>
                         <div onClick={() => setCount(0)} rel="noopener noreferrer" href="#" className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2  ${count === 0 ? 'border border-b-0 border-l-0 w-full' : 'border-b '} rounded-t-lg border-[#d1d1d1]dark:text-gray-600`}>
                             <span>Read Books</span>
                         </div>

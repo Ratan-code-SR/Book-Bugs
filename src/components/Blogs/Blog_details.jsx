@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from 'react';
+
 import { Link, useLoaderData, useParams } from 'react-router-dom';
-
-
 const Blog_details = () => {
     const blogData = useLoaderData()
     const { id } = useParams()
     const numId = parseInt(id)
-
     const idData = blogData.find((data) => data.id === numId)
-    console.log(idData);
     const { banner_img, post, date, book_name } = idData;
     return (
         <div>

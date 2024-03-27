@@ -33,7 +33,7 @@ export const router = createBrowserRouter([
                 element: <Book_list />,
                 children: [
                     {
-                        path: 'bookLists',
+                        index: true,
                         element: <Read_books />
                     },
                     {
